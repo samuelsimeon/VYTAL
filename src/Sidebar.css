@@ -1,0 +1,151 @@
+/* ==== SIDEBAR ==== 
+  
+  .sidebar {
+    width: 230px;
+    background-color: #14121c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 40px;
+    border-right: 2px solid #1f1d2a;
+  }
+  
+  .sidebar-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s;
+  }
+  
+  .sidebar-icon:hover img {
+    transform: scale(1.1);
+  }*/
+
+
+
+  .custom-sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #060B26, #1A1F37); 
+    color: white;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center everything horizontally */
+    justify-content: flex-start; /* push content to the top */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .sidebar-logo {
+    position: relative;
+    
+    text-align: center;
+  }
+  
+  .sidebar-logo::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 2px;
+    background: radial-gradient(circle, #ff4500 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+  
+
+
+  .sidebar-logo h2 {
+    font-size: 2rem;
+    font-family: "GillSansBoldItalic", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    
+  }
+  .sidebar-h2-link{
+    text-decoration: none;
+  }
+  
+  
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    
+  }
+  
+  .sidebar-link img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .sidebar-link:hover {
+    background: #1A1F37;
+    color: #ff4500;
+  }
+  
+  .sidebar-label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #bbb;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    
+  }
+  
+  .sidebar-help {
+    background-image: url(/images/helpbg.jpg);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    
+  }
+  
+  .sidebar-help img {
+    width: 30px;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    padding: 3px;
+    border-radius: 7px;
+  }
+  
+  .contact-btn {
+    font-family: "Outfit", sans-serif;
+    background: #0A0E23;
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+  }
+  
+  .contact-btn:hover {
+    background: white;
+    color: #ff4500;
+  }

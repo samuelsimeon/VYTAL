@@ -1,0 +1,33 @@
+.settings-main {
+    background-image: url(/images/underconstruction.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background-color: #060B26;
+    color: white;
+    text-align: center;
+  }
+  
+  .under-construction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .under-construction-container img {
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .under-construction-container p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 1rem;
+  }
+  

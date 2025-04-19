@@ -1,0 +1,687 @@
+/* ==== GENERAL DASHBOARD STYLES ==== */
+
+.dashboard {
+    display: flex;
+    background-color: #060B26;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  
+  
+  
+  
+  /* ==== MAIN DASHBOARD AREA ==== */
+  
+  .dashboard-main {
+    flex: 1;
+    margin-left: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* ==== HEADER ==== */
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-date {
+    font-size: 1rem;
+    background-color: #0F1535;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+  }
+  
+  .dashboard-user-info {
+    text-align: right;
+  }
+  .dashboard-user-info{
+    font-size: 1.5rem;
+    
+  }
+  
+  .dashboard-user-info p {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .dashboard-user-info span {
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
+  /* ==== TOP STATS ==== */
+  
+  .dashboard-top-stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+  flex: 1;
+  min-width: 180px;
+  background: linear-gradient(135deg, #060B26, #1A1F37);
+  padding: 1.1rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card:hover {
+  background: linear-gradient(135deg, #ff4500, #1A1F37);
+}
+
+.stat-icon {
+  background-color: #ff4500;
+  padding: 0.8rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.stat-change {
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.stat-change.positive {
+  color: #00ff99;
+}
+
+.stat-change.negative {
+  color: #ff5555;
+}
+  
+  
+  /* ==== WIDGETS ==== */
+  
+  .dashboard-widgets-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .widget-small {
+    flex: 1;
+    min-height: 200px;
+    background: #1f1d2a;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Greeting Widget */
+  .greeting-widget {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #060B26, #1A1F37);
+    color: white;
+    min-height: 200px;
+    padding: 0;
+  }
+  
+  /* Text half */
+  .greeting-text {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Image half */
+  .greeting-image-side {
+    flex: 1.7;
+    background-image: url(/images/greetingimage.jpg);
+    background: linear-gradient(to right, rgba(6, 11, 38, 0.9) 0%, rgba(6, 11, 38, 0.6) 30%, rgba(6, 11, 38, 0) 100%), url(/images/greetingimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    
+  }
+  
+
+  
+  
+  
+
+  .greeting-text {
+    flex: 1;
+    color: white;
+    font-size: 0.95rem;
+  }
+  
+  .greeting-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .greeting-text .sub {
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .log-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 50px;
+  }
+  .log-btn:hover {
+    color: #ff4500;
+  }
+  
+  .greeting-img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-left: 1rem;
+  }
+
+
+
+
+  /* Goal Widget */
+  .goal-widget {
+    flex: 1;
+    background: linear-gradient(-60deg, #060B26, #1A1F37);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center everything horizontally */
+    justify-content: flex-start; /* push content to the top */
+  }
+  
+  .goal-widget h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .goal-ring-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .goal-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .ring-bg {
+    fill: none;
+    stroke: #3e3e5e;
+    stroke-width: 3.8;
+  }
+
+  .progress-ring {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  
+
+  .ring-progress {
+    fill: none;
+    stroke: #ff4500;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease-in-out;
+  }
+  
+  .ring-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 40px;
+    height: 40px;
+  }
+  
+  .ring-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ring-labels {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.5rem; /* for controling spacing between 0%, 95%, 100% */
+  }
+
+  .percent-left,
+.percent-right {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.ring-percent {
+  text-align: center;
+}
+
+.ring-percent strong {
+  font-size: 1.3rem;
+  display: block;
+}
+
+.ring-percent p {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-top: 0.2rem;
+}
+
+
+
+
+  
+
+  /* Streak Widget */
+  .streak-widget {
+    flex: 1;
+    background: linear-gradient(135deg, #060B26, #1A1F37);
+    border-radius: 16px;
+    padding: 1.2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Header */
+  .streak-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .streak-header h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .streak-options {
+    font-size: 1.3rem;
+    color: #888;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Body */
+  .streak-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .streak-center {
+    text-align: center;
+    flex: 1;
+  }
+
+
+
+
+  
+  .leaf-badge {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 0rem;
+  }
+
+  .streak-leaf {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .streak-days {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  
+  .streak-label {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  .streak-quote-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+  
+  .streak-quote-box .highlight {
+    color: #00ff99;
+    font-weight: 500;
+  }
+  
+  /* Fire Icon */
+  .streak-fire {
+    margin-bottom: 80px;
+  }
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  /* ==== CHARTS ==== */
+  
+  .dashboard-charts-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .chart-card {
+    flex: 1;
+    background: linear-gradient(135deg, #0F123B, #0A0E23);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: white;
+    min-height: 350px;
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .chart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    
+  }
+  
+  .chart-sub {
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-sub .highlight {
+    color: #00e676;
+    font-weight: 600;
+  }
+  
+  
+  /*===== Logged Workout======*/
+
+
+  .dashboard-logged-workouts {
+    flex: 1;
+    background: linear-gradient(135deg, #0F123B, #0A0E23);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: white;
+    
+    
+  }
+  
+  .logged-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logged-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .logged-sub {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .logged-sub .check {
+    color: #22ff80;
+    margin-right: 6px;
+  }
+  
+  .logged-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .logged-table th,
+  .logged-table td {
+    padding: 1rem 0;
+    text-align: left;
+    border-bottom: 1px solid #2a2a3d;
+  }
+  
+  .logged-table th {
+    color: #999;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  
+
+
+  /*=======Reminder========*/
+
+  .gym-reminders-widget {
+    flex: 0.5;
+    background: linear-gradient(90deg, #0F123B, #0A0E23);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  
+  .reminder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  
+  .reminder-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .reminder-sub {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 4px;
+  }
+  
+  .reminder-sub .check {
+    color: #22ff80;
+    margin-right: 6px;
+  }
+  
+  .reminder-add {
+    padding: 0.3rem 1rem;
+    background: transparent;
+    border: 1px solid #3f3f52;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+  
+  .reminder-add:hover {
+    background: #ff4500;
+  }
+  
+  .reminder-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    overflow-y: auto;
+    max-height: 260px;
+    padding-right: 0.2rem;
+  }
+  
+  .reminder-item {
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+  }
+  
+  .reminder-icon {
+    font-size: 1.2rem;
+  }
+  
+  .reminder-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reminder-title {
+    font-weight: 500;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .reminder-time {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 2px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* ==== BOTTOM SECTION ==== */
+  
+  .dashboard-bottom-section {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .workout-table, .notes-reminders {
+    flex: 1;
+    min-height: 250px;
+    background: #1f1d2a;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  
+  /* ==== RESPONSIVE ==== */
+  
+  @media (max-width: 1024px) {
+    .dashboard-widgets-row,
+    .dashboard-charts-row,
+    .dashboard-bottom-section {
+      flex-direction: column;
+    }
+  
+    .widget-large, .widget-small, .chart-card, .workout-table, .notes-reminders {
+      width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  
+
+
+

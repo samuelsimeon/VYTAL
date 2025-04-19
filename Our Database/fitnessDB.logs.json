@@ -1,0 +1,210 @@
+[{
+  "_id": {
+    "$oid": "67ccedd7f594d1559c2284d6"
+  },
+  "user": {
+    "$oid": "64123456789abcdef0123456"
+  },
+  "title": "push up",
+  "date": "2025-02-28",
+  "duration": 14,
+  "sets": 3,
+  "reps": 3,
+  "weight": "20 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cceea3f594d1559c2284d9"
+  },
+  "user": {
+    "$oid": "64123456789abcdef0123456"
+  },
+  "title": "push up",
+  "date": "2025-03-09",
+  "duration": 14,
+  "sets": 3,
+  "reps": 3,
+  "weight": "20 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ced58286236e0f1438899d"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "push up",
+  "date": "2025-03-10",
+  "duration": 30,
+  "sets": 3,
+  "reps": 10,
+  "weight": "50 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ced66a86236e0f143889a0"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "push up",
+  "date": "2025-03-10",
+  "duration": 30,
+  "sets": 2,
+  "reps": 1,
+  "weight": "3 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ced87a86236e0f143889a3"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "Bench Press",
+  "date": "2025-03-10",
+  "duration": 30,
+  "sets": 2,
+  "reps": 10,
+  "weight": "49 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cedb8b86236e0f143889ab"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "lat pulldown",
+  "date": "2025-03-10",
+  "duration": 5,
+  "sets": 2,
+  "reps": 11,
+  "weight": "7 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cef37786236e0f143889b2"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "peck deck",
+  "date": "2025-03-10",
+  "duration": 20,
+  "sets": 2,
+  "reps": 15,
+  "weight": "30 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cf031c86236e0f143889ba"
+  },
+  "user": {
+    "$oid": "67cf02422329ab56a7eb4b54"
+  },
+  "title": "reverse pec deck",
+  "date": "2025-03-10",
+  "duration": 17,
+  "sets": 7,
+  "reps": 55,
+  "weight": "53 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d02f4886236e0f143889c4"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "push up",
+  "date": "2025-03-11",
+  "duration": 30,
+  "sets": 33,
+  "reps": 3,
+  "weight": "3 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2d807fea75985f993da16"
+  },
+  "user": {
+    "$oid": "67d2d769fea75985f993da11"
+  },
+  "title": "Bench Press",
+  "date": "2025-03-13",
+  "duration": 5,
+  "sets": 3,
+  "reps": 22,
+  "weight": "70 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2dc16fea75985f993da20"
+  },
+  "user": {
+    "$oid": "67d2d769fea75985f993da11"
+  },
+  "title": "Bench Press",
+  "date": "2025-03-13",
+  "duration": 3,
+  "sets": 4,
+  "reps": 10,
+  "weight": "50 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d2dea2fea75985f993da2d"
+  },
+  "user": {
+    "$oid": "67d2de30fea75985f993da28"
+  },
+  "title": "lat pulldown",
+  "date": "2025-03-13",
+  "duration": 2,
+  "sets": 3,
+  "reps": 9,
+  "weight": "30 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d4c03d32d7016b44c656ed"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "Push ups",
+  "date": "2025-03-14",
+  "duration": 30,
+  "sets": 10,
+  "reps": 6,
+  "weight": "16 kg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d4c6e832d7016b44c656f7"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "title": "Push ups",
+  "date": "2025-03-22",
+  "duration": 30,
+  "sets": 23,
+  "reps": 19,
+  "weight": "56 kg",
+  "__v": 0
+}]

@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "67d0367ce916c8df9e637235"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "mealName": "bread",
+  "calories": 200,
+  "date": "2025-03-11",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d4c70432d7016b44c656fb"
+  },
+  "user": {
+    "$oid": "67cce595878b794670d34b23"
+  },
+  "mealName": "fries",
+  "calories": 34,
+  "date": "2025-03-13",
+  "__v": 0
+}]
