@@ -34,7 +34,7 @@ function Profile({ user, setUser }) {
     setMessage("");
 
     try {
-      const response = await fetch(`http://localhost:3009/api/auth/update/${profile._id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/update/${profile._id}`,{
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
