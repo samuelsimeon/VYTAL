@@ -49,7 +49,7 @@ app.use(cookieParser());
 // Configure session middleware
 app.use(
   session({
-    secret: "someSuperSecretKey", // Replace with a strong secret in production!
+    secret: process.env.SESSION_SECRET, 
     resave: false,
     saveUninitialized: false,
     cookie: {
