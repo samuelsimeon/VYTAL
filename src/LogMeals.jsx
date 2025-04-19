@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./Sidebar.css";
-import "./LogMeals.css";
+import "./logMeals.css";
 
 // ICONS
 import dashboardIcon from "/icons/dashboard.png";
