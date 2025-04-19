@@ -19,7 +19,7 @@ const port = process.env.PORT || 3009;
 
 // Set up EJS templating
 app.set("view engine", "ejs");
-app.set("views", "./views"); 
+app.set("views", "./views");
 
 // Connect to MongoDB using Mongoose
 mongoose.connect(process.env.MONGO_URI, {
@@ -35,21 +35,25 @@ db.once("open", () => {
 // Middleware for JSON parsing
 app.use(express.json());
 
-// Configure CORS to allow credentials and set the correct origin
+// Parse CORS_ORIGIN into an array (comma‑separated in your .env)
+const allowedOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim())
+  : [];
+
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN, 
+    origin: allowedOrigins,
     credentials: true,
   })
 );
 
-// Configure cookie-parser middleware
+// Cookie parser
 app.use(cookieParser());
 
-// Configure session middleware
+// Session middleware
 app.use(
   session({
-    secret: process.env.SESSION_SECRET, 
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -58,21 +62,17 @@ app.use(
   })
 );
 
-// Mount auth routes (for registration, login, etc.)
+// Mount your routes
 app.use("/api/auth", authRoutes);
-
-// Mount log routes
 app.use("/api/logs", logRoutes);
-
-// Mount meal routes
 app.use("/api/meals", mealRoutes);
 
-// Server-rendered dashboard route using EJS templating
+// EJS dashboard demo
 app.get("/dashboard", (req, res) => {
   res.render("dashboard", { username: "SampleUser" });
 });
 
-// A simple API test route
+// Health check / root
 app.get("/", (req, res) => {
   res.send("Hello from the Fitness App API!");
 });
