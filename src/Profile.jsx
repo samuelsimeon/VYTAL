@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-import "./profile.css";
+import "./Profile.css";
 
 // ICONS
 import dashboardIcon from "/icons/dashboard.png";
@@ -34,7 +34,8 @@ function Profile({ user, setUser }) {
     setMessage("");
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/update/${profile._id}`,{
+      // const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/update/${profile._id}`,{
+      const response = await fetch(`http://localhost:3009/api/auth/update/${profile._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

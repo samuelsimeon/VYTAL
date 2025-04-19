@@ -23,7 +23,8 @@ function LogMeals() {
   useEffect(() => {
     const fetchMeals = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/meals`, {
+        // const response = await fetch(`${import.meta.env.VITE_API_URL}/api/meals`, {
+        const res = await fetch("http://localhost:3009/api/meals", {
           credentials: "include",
         });
         if (!res.ok) throw new Error("Failed to fetch meals");
