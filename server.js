@@ -38,7 +38,7 @@ app.use(express.json());
 // Configure CORS to allow credentials and set the correct origin
 app.use(
   cors({
-    origin: "http://localhost:5173", 
+    origin: process.env.CORS_ORIGIN, 
     credentials: true,
   })
 );
