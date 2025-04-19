@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-import "./Profile.css";
+import "./profile.css";
 
 // ICONS
 import dashboardIcon from "/icons/dashboard.png";
